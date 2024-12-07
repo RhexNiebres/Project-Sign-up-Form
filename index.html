@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Project: Sign-up Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="box1">
+        <div id="logoShadow">
+            <img src="images/odin-lined.png" alt="odin logo">
+            <h1>odin</h1>
+        </div>
+      </div>
+        <div id="box2">
+            <div id="header">
+                <p>this is not a real online service</p>
+                
+            </div>
+            <!-- divider -->
+            <h2>Lets do this!</h1>
+            <div id="input-container">
+                <div class="right">
+                        <br>
+                    <label for="firstName">FirstName</label>
+                    <br>
+                    <input type="text" name="firstName" required autocomplete="off"  placeholder="Spongebob">
+                    <br>
+                    <label for="email">FISRT NAME</label>
+                    <br>
+                    <input type="email" name="email" required autocomplete="off" placeholder="Spongebob@gamil.com">
+                    <br>
+                    <label for="Password" >PASSWORD</label>
+                    <br>
+                    <input type="password" name="Password" required autocomplete="off" placeholder="enter password">
+                </div>
+                <div class="left">
+                    <label for="lastName" >LAST NAME</label>
+                    <br>
+                    <input type="text" name="lastName" required autocomplete="off" placeholder="Squarepants">
+                    <br>
+                    <label for="phoneNumber" >PHONE NUMBER</label>
+                    <br>
+                    <input type="tel" name="phoneNumber" required autocomplete="off" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="enter phone number">
+                    <br>
+                    <label for="confirmPassword" >CONFIRM PASSWORD</label>
+                    <br>
+                    <input type="password" name="confirmPassword" required autocomplete="off" placeholder="confirmPassword">
+                </div>
+                <div>
+
+                </div>    
+            </div>
+            <!-- divider -->
+
+            
+
+            <div class="button-container">
+            <button type="submit" id="createAccountButton">createAccount</button>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
