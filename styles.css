@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'customFont'; 
-    src: url(fonts/Norse-Bold.otf) format('opentype'); 
+  font-family: "customFont";
+  src: url(fonts/Norse-Bold.otf) format("opentype");
 }
 * {
   margin: 0;
@@ -11,6 +11,7 @@ html,
 body {
   height: 100%;
   font-family: sans-serif; /* Set a default font */
+  overflow: hidden;
 }
 .container {
   display: flex;
@@ -19,87 +20,95 @@ body {
   height: 100%;
 }
 #box1 {
-  width: 40%;
+  width: 30%;
   background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
   background-size: cover;
   position: relative;
 }
-#logoShadow{
-    box-shadow: 1px 1px 10px px;
-    width: 100%;
-    position: absolute;
-    top: 25%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    height: 20%;
+#logo {
+  box-shadow: 1px 1px 10px px;
+  position: relative;
+  top: 25%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  height: 20%;
 }
 #box1 img {
-    width: 8em;
-    height: auto;
-    position: relative;
-    left: 10%;
-
+  width: 7em;
+  position: relative;
+  left: 10%;
 }
-#box1 h1{
-    position: relative;
-    color: white;
-    left: 15%;
-    font-size: 7rem;
-    font-family: 'customFont';
-} 
+#box1 h1 {
+  position: relative;
+  color: white;
+  left: 15%;
+  font-size: 7rem;
+  font-family: "customFont";
+}
 #box2 {
   display: flex; /*for giving even space to child elements*/
   align-content: center;
   justify-content: space-between;
   flex-direction: column;
-  width: 60%;
+  width: 70%; /* fixed unecessary space*/
+  height: 65%;
 }
 
-#header p{
-    font-size: 2rem;
-    text-align: left;
-    padding: 15%;
-    font-weight: 700;
-    height: 40%;
-    text-align: center;
-    border: 1px solid black;
-}
-
-#input-container {
-  background-color: white;
+#header {
   height: 30%;
   display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#header p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  position: relative;
+  left: 1.5em;
+  top: 30%;
+}
+.left {
+  position: relative;
+  top: 2em;
+}
+#input-container {
+  height: 0%;
+  display: flex;
   justify-content: space-evenly;
-  position: relative;
+  align-items: flex-start;
+  font-family: monospace;
+}
+#input-container input {
+  padding: 0.5rem;
+  width: 250px;
+  border-radius: 5px;
+  font-family: sans-serif;
+}
+#password-form {
+  width: 100%;
+  box-shadow: 1px 1px 20px 0px;
+}
+#input-container input:valid:not(:placeholder-shown) {
+  border: 2px solid green;
+}
+#input-container input:invalid:not(:placeholder-shown) {
+  border: 2px solid red;
+}
+input:invalid:not(:placeholder-shown) + p {
+  color: red;
+}
 
-}
-#input-container input{
-    padding: 1rem;
-    border: 2px solid #E5E7EB ;
-    border-radius: 5px;
-    font-family: sa;
-    width: 100%;
-}
-#input-container input:valid{
-    border: green;
-}
-#input-container input:valid{
-    border: red;
-}
 .button-container {
-
-  height: 40%;
   position: relative;
 }
-#createAccountButton{
-    position: absolute;
-    left: 17%;
-    padding: 1.5rem;
-    border-radius: 5px;
-    max-width: 17%;
-    height: 10%;
-    background-color: #596D48;
-    color: white;
-    font-size: 1rem;
+#createAccountButton {
+  position: absolute;
+  left: 16%;
+  top: 15em;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #596d48;
+  color: white;
+  font-size: 1rem;
 }
