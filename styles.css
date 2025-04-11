@@ -17,7 +17,7 @@ body {
 }
 
 #box1 {
-  width: 30%;
+  width: 40%;
   background-image: url(images/cement.avif);
   background-size: cover;
   position: relative;
@@ -49,7 +49,7 @@ body {
   align-content: center;
   justify-content: space-between;
   flex-direction: column;
-  width: 70%; /* fixed unecessary space*/
+  width: 60%; /* fixed unecessary space*/
   height: 65%;
 }
 
@@ -58,17 +58,12 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-top: 6em;
 }
 #header p {
   font-size: 1.5rem;
   font-weight: 600;
-  position: relative;
-  left: 1.5em;
-  top: 30%;
-}
-.left {
-  position: relative;
-  top: 2em;
+  padding: 30px;
 }
 #input-container {
   height: 0%;
@@ -76,15 +71,18 @@ body {
   justify-content: space-evenly;
   align-items: flex-start;
 }
+
+#password-form {
+  width: 100%;
+  box-shadow: 1px 1px 20px 0px;
+}
+
 #input-container input {
   padding: 0.5rem;
   width: 250px;
   border-radius: 5px;
 }
-#password-form {
-  width: 100%;
-  box-shadow: 1px 1px 20px 0px;
-}
+
 #input-container input:valid:not(:placeholder-shown) {
   border: 2px solid green;
 }
