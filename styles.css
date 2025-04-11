@@ -119,11 +119,19 @@ input:invalid:not(:placeholder-shown) + p {
 
 #createAccountButton {
   position: absolute;
-  left: 16%;
-  top: 15em;
-  padding: 1rem;
-  border-radius: 5px;
-  background-color: #596d48;
-  color: white;
+  left: 8%;
+  top: 21em;
+  padding: 10px 40px 10px 40px ;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: white;
   font-size: 1rem;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#createAccountButton:hover{
+  background-color: #aaa;
+  color: fff;
 }
