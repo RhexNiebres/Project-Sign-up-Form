@@ -106,17 +106,18 @@
           </div>
 
           <!-- divider -->
+          <div class="button-container">
+            <button type="submit" id="createAccountButton">
+              Create Account
+            </button>
+          </div>
         </form>
-        <div class="button-container">
-          <button type="submit" id="createAccountButton">
-            Create Account
-          </button>
-        </div>
+      
       </div>
     </div>
     <script>
       document
-        .getElementById("password-form")
+        .getElementById("form")
         .addEventListener("submit", function (event) {
           const password = document.getElementById("password").value;
           const confirmPassword =
@@ -125,6 +126,8 @@
           if (password !== confirmPassword) {
             event.preventDefault(); // prevent form submission
             alert("Passwords do not match!");
+          }else{
+            alert("Thanks for trying out the form!🎉🙏 your information will not be stored anywhere don't worry.😉")
           }
         });
     </script>
