@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  box-sizing: border-box; 
 }
 html,
 body {
@@ -49,7 +49,7 @@ body {
   align-content: center;
   justify-content: space-between;
   flex-direction: column;
-  width: 60%; /* fixed unecessary space*/
+  width: 60%; 
   height: 65%;
 }
 
@@ -72,15 +72,35 @@ body {
   align-items: flex-start;
 }
 
-#password-form {
-  width: 100%;
-  box-shadow: 1px 1px 20px 0px;
-}
-
 #input-container input {
   padding: 0.5rem;
   width: 250px;
   border-radius: 5px;
+}
+
+#form {
+  width: 100%;
+  box-shadow: 1px 1px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  margin-top:20%;
+  max-height:60%;
+  padding: 25px;
+}
+#form h1 {
+  font-size: 25px;
+  width: 100%;
+}
+.left{
+  display: flex;
+  flex-direction: column;
+  gap:7px;
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  margin-top: 43px;
+  gap:7px;
 }
 
 #input-container input:valid:not(:placeholder-shown) {
@@ -96,6 +116,7 @@ input:invalid:not(:placeholder-shown) + p {
 .button-container {
   position: relative;
 }
+
 #createAccountButton {
   position: absolute;
   left: 16%;
